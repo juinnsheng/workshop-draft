@@ -1,0 +1,88 @@
+.why-us {
+    background-color: black;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.why-us-title {
+    font-family: "Poppins", serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20px 0;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.why-us-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.reason-h1,
+.reason-h2,
+.reason-h3,
+.reason-h4 {
+    background: #1c1c1c;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+    justify-content: space-between; /* Distributes text and image evenly */
+    text-align: center;
+    height: 350px; /* Ensures consistent height for all cards */
+}
+
+.reason-text-h1 h3,
+.reason-text-h2 h3{
+    font-family: "Poppins", serif;
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 10px; /* Uniform spacing below the header */
+}
+.reason-text-h3 h3,
+.reason-text-h4 h3{
+    font-family: "Poppins", serif;
+    font-size: 1.5rem;
+    color: #007bff;
+    margin: 0; /* Uniform spacing below the header */
+}
+
+.reason-text-h1 p,
+.reason-text-h2 p{
+    font-family: "Poppins", serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+    color: white;
+    margin-bottom: 15px; /* Uniform spacing below the text */
+}
+.reason-text-h3 p,
+.reason-text-h4 p{
+    font-family: "Poppins", serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+    color: white;
+    margin:3.0px;/* Uniform spacing below the text */
+}
+
+.reason-image-h1,
+.reason-image-h2,
+.reason-image-h3,
+.reason-image-h4 {
+    margin-top: auto; /* Pushes the image to the bottom of the container */
+}
+
+.reason-image-h1 img,
+.reason-image-h2 img,
+.reason-image-h3 img,
+.reason-image-h4 img {
+    width: 180px; /* Fixed size for uniformity */
+    height: 170px;
+    border-radius: 8px;
+    object-fit: cover;
+}
