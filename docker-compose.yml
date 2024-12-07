@@ -1,0 +1,15 @@
+services:
+  frontend-azure:
+    platform: linux/amd64
+    build:
+      context: ./car-workshop
+      dockerfile: Dockerfile  
+    container_name: beta-website
+    ports:
+      - "8080:80"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
