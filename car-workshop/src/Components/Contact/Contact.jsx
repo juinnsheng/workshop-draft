@@ -3,13 +3,15 @@ import "./Contact.css";
 
 const ContactSection = () => {
   return (
-    <section id="contact" section className="contact-section">
+    <section id="contact" className="contact-section">
       <h2>Contact Us</h2>
-      {/* Video Background */}
-      <video className="contact-video" autoPlay muted loop>
-        <source src="/video/3.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      {/* Image Background */}
+      <div className="contact-image">
+        <img
+          src="images/background.jpg"
+          alt="Workshop Background"
+        />
+      </div>
       {/* Overlay */}
       <div className="contact-overlay">
         <p>Your 24/7 Solution for Your Car Needs</p>

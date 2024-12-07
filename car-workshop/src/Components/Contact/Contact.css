@@ -1,67 +1,74 @@
 .contact-section {
-    position: relative;
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
-  }
-  
-  .contact-section h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-  
-  .contact-video {
-    width: 100%;
-    height: auto;
-    max-height: 400px;
-    object-fit: cover;
-    margin-bottom: 20px;
-  }
-  
-  .contact-overlay {
-    position: relative;
-    background: rgba(0, 0, 0, 0.5); 
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: inline-block;
-    margin: -60px auto 20px; 
-    z-index: 1;
-  }
-  
-  .contact-info {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .contact-phone {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .call-icon {
-    font-size: 30px; 
-    color: #007bff; 
-  }
-  
-  .phone-number {
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .contact-section p {
-    margin-top: 10px;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #ccc;
-  }
-  
+  position: relative;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  overflow: hidden; /* Ensures content stays contained */
+}
+
+.contact-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.contact-image img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+  display: block;
+}
+
+.contact-overlay {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 800px;
+  background: rgba(0, 0, 0, 0.5); /* Transparent overlay */
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 1; /* Ensures overlay is above the image */
+}
+
+.contact-info {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  z-index: 2; /* Ensures it’s above the background image */
+}
+
+.contact-phone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.call-icon {
+  font-size: 30px; 
+  color: #007bff; /* Highlight the icon */
+}
+
+.phone-number {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.contact-section p {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ccc;
+  text-align: center;
+  max-width: 600px;
+}
