@@ -51,3 +51,33 @@
     color: #ffcc00;
   }
   
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack elements vertically */
+    height: auto; /* Adjust height to content */
+    padding: 10px 20px;
+  }
+
+  .text {
+    font-size: 1.2rem; /* Slightly larger text for readability */
+    margin-bottom: 10px; /* Add space below the title */
+    text-align: center; /* Center-align the header text */
+  }
+
+  .nav {
+    flex-direction: column; /* Stack the navigation vertically */
+    padding-right: 0;
+    gap: 10px; /* Reduce the gap between elements */
+  }
+
+  .nav-links {
+    flex-direction: column; /* Stack links vertically */
+    gap: 10px; /* Space between links */
+    align-items: center; /* Center-align links */
+  }
+
+  .nav-links a {
+    font-size: 0.9rem; /* Slightly smaller font size */
+  }
+}
