@@ -6,27 +6,27 @@ const OurServices = () => {
     {
       title: "Insurance Claims",
       description: "We simplify the insurance claims process for you.",
-      image: "/images/insuranceclaim.jpg",
+      image: "workshop-draft/images/insuranceclaim.jpg",
     },
     {
       title: "Auto Body Repair",
       description: "Restoring your vehicle to its original condition.",
-      image: "/images/autobodyrepair.jpg",
+      image: "workshop-draft/images/autobodyrepair.jpg",
     },
     {
       title: "Paintless Dent Repair",
       description: "Efficiently remove dents without damaging the paint.",
-      image: "/images/paintless.png",
+      image: "workshop-draft/images/paintless.png",
     },
     {
       title: "Collision Repair",
       description: "Comprehensive repair services after an accident.",
-      image: "/images/collisionrepair.jpg",
+      image: "workshop-draft/images/collisionrepair.jpg",
     },
     {
       title: "Automotive Refinishing",
       description: "High-quality paint jobs to make your car shine.",
-      image: "/images/finishing.jpg",
+      image: "workshop-draft/images/finishing.jpg",
     },
   ];
 
@@ -52,15 +52,15 @@ const OurServices = () => {
         </p>
         <div className="insurance-images">
           <div className="insurance-image">
-            <img src="/images/amassurance.png" alt="Insurance Partner 1" />
+            <img src="workshop-draft/images/amassurance.png" alt="Insurance Partner 1" />
             <p>Partner 1</p>
           </div>
           <div className="insurance-image">
-            <img src="/images/etiqa.png" alt="Insurance Partner 2" />
+            <img src="workshop-draft/images/etiqa.png" alt="Insurance Partner 2" />
             <p>Partner 2</p>
           </div>
           <div className="insurance-image">
-            <img src="/images/zurich.jpg" alt="Insurance Partner 3" />
+            <img src="workshop-draft/images/zurich.jpg" alt="Insurance Partner 3" />
             <p>Partner 3</p>
           </div>
         </div>

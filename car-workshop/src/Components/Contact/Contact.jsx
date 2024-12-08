@@ -8,7 +8,7 @@ const ContactSection = () => {
       {/* Image Background */}
       <div className="contact-image">
         <img
-          src="images/background2.jpg"
+          src="workshop-draft/images/background2.jpg"
           alt="Workshop Background"
         />
       </div>
