@@ -15,7 +15,7 @@ const WhyUs = () => {
           </div>
           <div className="reason-image-h1">
             <img
-              src="/images/punctual.jpg"
+              src="images/punctual.jpg"
               alt="Punctual and Reliable"
               className="reason-image"
             />
@@ -30,7 +30,7 @@ const WhyUs = () => {
           </div>
           <div className="reason-image-h2">
             <img
-              src="/images/piggybank.jpg"
+              src="images/piggybank.jpg"
               alt="Affordable Services"
               className="reason-image"
             />
@@ -45,7 +45,7 @@ const WhyUs = () => {
           </div>
           <div className="reason-image-h3">
             <img
-              src="/images/staff.jpg"
+              src="images/staff.jpg"
               alt="Experienced Staff"
               className="reason-image"
             />
@@ -60,7 +60,7 @@ const WhyUs = () => {
           </div>
           <div className="reason-image-h4">
             <img
-              src="/images/sota.jpg"
+              src="images/sota.jpg"
               alt="State-of-the-Art Equipment"
               className="reason-image"
             />
