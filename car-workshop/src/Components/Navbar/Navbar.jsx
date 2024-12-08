@@ -1,15 +1,34 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isScrollingUp, setIsScrollingUp] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY) {
+        setIsScrollingUp(false); // User is scrolling down
+      } else {
+        setIsScrollingUp(true); // User is scrolling up
+      }
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
+
   return (
-    <header className="header">
+    <header className={`header ${isScrollingUp ? "show" : "hide"}`}>
       <div className="text">Kou Sing Workshop Sdn Bhd</div>
       <button className="nav-toggle" onClick={toggleNav} aria-label="Toggle Navigation">
         &#9776; {/* Hamburger icon */}

@@ -1,3 +1,4 @@
+/* General styles */
 .header {
   position: fixed;
   top: 0;
@@ -10,6 +11,15 @@
   align-items: center;
   padding: 0 20px;
   z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.header.hide {
+  transform: translateY(-100%); /* Hide the header */
+}
+
+.header.show {
+  transform: translateY(0); /* Show the header */
 }
 
 .text {
@@ -57,28 +67,20 @@
   display: none; /* Hidden by default */
 }
 
-/* Hide nav links by default (mobile) */
-.nav {
-  display: none;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-}
-
-/* Show nav links when open */
-.nav.open {
-  display: flex;
-}
-
 /* Responsive styles */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .nav {
-    display: flex; /* Default desktop view */
-    flex-direction: row;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
     align-items: center;
   }
 
+  .nav.open {
+    display: flex;
+  }
+
   .nav-toggle {
-    display: none; /* Hide hamburger icon on desktop */
+    display: block; /* Show hamburger icon on mobile */
   }
 }
