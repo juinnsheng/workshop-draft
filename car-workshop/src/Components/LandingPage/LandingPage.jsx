@@ -18,7 +18,7 @@ const LandingPage = ({ onComplete }) => {
   return (
     <div className="landing-page">
       <video className="landing-video" autoPlay muted loop>
-        <source src="workshop-draft/video/0.mp4" type="video/mp4" />
+        <source src="/video/0.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="landing-overlay">
